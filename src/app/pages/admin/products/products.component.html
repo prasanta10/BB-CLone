@@ -1,0 +1,85 @@
+<div class="row mt-6">
+    <div [ngClass]="toggleFlag?'col-8':'col-12'">
+        <div class="card">
+            <div class="card-header bg-gray-500">
+                <div class="row">
+                    <div class="col-6 font-bold font-serif text-xl">
+                        Product List
+                    </div>
+                    <div class="col-6 text-end">
+                        <button class="btn btn-sm btn-success" (click)="onToggle()">New</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    @for(product of allProductList; track product.id){
+                    <div class="col-sm-4 col-lg-3 mb-2">
+                        <div class="card">
+                            <img [src]="product.productImageUrl" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title font-semibold">{{product.productName}}</h5>
+                              <p class="card-text">{{product.productDescription}}</p>
+                              <p class="font-bold">₹ {{product.productPrice}}</p>
+                              <button class="btn btn-md btn-success mr-2" (click)="editProduct(product)">Edit</button>
+                              <button class="btn btn-md btn-danger" (click)="deleteProduct(product.id)">Delete</button>
+                            </div>
+                          </div>
+                    </div>
+                }
+                </div>
+            </div>
+        </div>
+    </div>
+    @if(toggleFlag){
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header bg-gray-500">
+                <div class="row">
+                    <div class="col-6 font-bold font-serif text-xl">
+                        New Product Details
+                    </div>
+                    <div class="col-6 text-end">
+                        <button class="btn btn-sm btn-success" (click)="onToggle()">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="">Product Name</label>
+                        <input type="text" [(ngModel)]="productObj.productName" class="form-control"/>
+                    </div>
+                    <div class="col-6">
+                        <label for="">Product Price</label>
+                        <input type="text" [(ngModel)]="productObj.productPrice" class="form-control"/>
+                    </div>
+                    <div class="col-6">
+                        <label for="">Category</label>
+                        <select name="Categories" [(ngModel)]="productObj.categoryId" class="form-select">
+                            @for(cate of categoryList; track cate.categoryId){
+                                <option [value]="cate.categoryId">{{cate.categoryName}}</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="">Image Url</label>
+                        <input type="text" [(ngModel)]="productObj.productImageUrl" class="form-control"/>
+                    </div>
+                    <div class="col-12">
+                        <label for="">Product Description</label>
+                        <textarea type="text" [(ngModel)]="productObj.productDescription" class="form-control"></textarea>>
+                    </div>
+                    <div class="col-12 mt-2">
+                        @if(editFlag){
+                            <button class="btn btn-md btn-success" (click)="editProducts()">Edit Product</button>
+                        }@else {
+                            <button class="btn btn-md btn-success" (click)="addProduct()">Add Product</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+</div>

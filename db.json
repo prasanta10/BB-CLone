@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": "e33d",
+      "productId": 0,
+      "productName": "Toned Amul Milk",
+      "productPrice": "70",
+      "productDescription": "Amul Taaza Homogenised Toned Milk, 1 L Carton",
+      "createdAt": "2024-03-12T06:33:30.276Z",
+      "categoryId": "3",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/306926_4-amul-homogenised-toned-milk.jpg?tr=w-96,q=80"
+    },
+    {
+      "id": "1960",
+      "productName": "Carrot",
+      "productPrice": "60",
+      "productDescription": "Fresho Carrot - Orange (Loose), 1 kg",
+      "createdAt": "2024-03-12T07:03:50.313Z",
+      "categoryId": "1",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg?tr=w-96,q=80",
+      "productId": "1960"
+    },
+    {
+      "id": "769d",
+      "productId": "",
+      "productName": "Cauliflower",
+      "productPrice": "21",
+      "productDescription": "Fresho Cauliflower, 1 pc (approx. 400 to 600 g)",
+      "createdAt": "2024-03-12T09:26:58.255Z",
+      "categoryId": "1",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000074-2_2-fresho-cauliflower.jpg?tr=w-96,q=80"
+    },
+    {
+      "id": "d297",
+      "productId": "d297",
+      "productName": "Capsicum",
+      "productPrice": "70",
+      "productDescription": "Fresho Capsicum - Green (Loose), 1 kg",
+      "createdAt": "2024-03-13T05:31:30.178Z",
+      "categoryId": "1",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000067-2_32-fresho-capsicum-green.jpg?tr=w-96,q=80"
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": 1,
+      "categoryName": "Fruits & Vegetables",
+      "id": "e6c8"
+    },
+    {
+      "categoryId": 2,
+      "categoryName": "Beverages",
+      "id": "29eb"
+    },
+    {
+      "categoryId": 3,
+      "categoryName": "Bakery, Cakes & Dairy",
+      "id": "cccf"
+    },
+    {
+      "categoryId": 4,
+      "categoryName": "Foodgrains, oil & Masala",
+      "id": "a171"
+    },
+    {
+      "categoryId": 5,
+      "categoryName": "Snacks & Branded Foods",
+      "id": "a721"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="form" >
+      <form class="login-form" [formGroup]="loginForm" (submit)="onlogin()" >
+        <input type="text" name="name" placeholder="Username" formControlName="name">
+        @if(loginForm.get('name')?.hasError('required') && loginForm.get('name')?.touched){
+        <div class="form-text text-danger fw-bold">
+          Admin Name is required!
+        </div>
+      }
+        <input type="text" name="password" placeholder="Password" formControlName="password">
+        @if(loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched){
+          <div class="form-text text-danger fw-bold">
+            Password is required!
+          </div>
+        }
+        <button type="submit" class="btn" >Login</button>
+      </form>
+    </div>
+  </div>
