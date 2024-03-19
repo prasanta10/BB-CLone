@@ -27,4 +27,16 @@ export class HttpService {
   deleteProduct(id: any){
     return this.http.delete(`http://localhost:3000/products/${id}`)
   }
+
+  addProductToCart(obj:any){
+    return this.http.post("http://localhost:3000/cart",obj);
+  }
+
+  getcartProducts(){
+    return this.http.get("http://localhost:3000/cart");
+  }
+
+  updateCartProduct(cartObj: any){
+    return this.http.put(`http://localhost:3000/cart/${cartObj.productId}`,cartObj)
+  }
 }

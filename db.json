@@ -1,16 +1,6 @@
 {
   "products": [
     {
-      "id": "e33d",
-      "productId": 0,
-      "productName": "Toned Amul Milk",
-      "productPrice": "70",
-      "productDescription": "Amul Taaza Homogenised Toned Milk, 1 L Carton",
-      "createdAt": "2024-03-12T06:33:30.276Z",
-      "categoryId": "3",
-      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/306926_4-amul-homogenised-toned-milk.jpg?tr=w-96,q=80"
-    },
-    {
       "id": "1960",
       "productName": "Carrot",
       "productPrice": "60",
@@ -21,16 +11,6 @@
       "productId": "1960"
     },
     {
-      "id": "769d",
-      "productId": "",
-      "productName": "Cauliflower",
-      "productPrice": "21",
-      "productDescription": "Fresho Cauliflower, 1 pc (approx. 400 to 600 g)",
-      "createdAt": "2024-03-12T09:26:58.255Z",
-      "categoryId": "1",
-      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000074-2_2-fresho-cauliflower.jpg?tr=w-96,q=80"
-    },
-    {
       "id": "d297",
       "productId": "d297",
       "productName": "Capsicum",
@@ -39,6 +19,16 @@
       "createdAt": "2024-03-13T05:31:30.178Z",
       "categoryId": "1",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000067-2_32-fresho-capsicum-green.jpg?tr=w-96,q=80"
+    },
+    {
+      "id": "f706",
+      "productId": "f706",
+      "productName": "Banana",
+      "productPrice": "30",
+      "productDescription": "Fresho Banana - Robusta, 1 kg",
+      "createdAt": "2024-03-18T07:08:11.429Z",
+      "categoryId": "1",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000025-3_3-fresho-banana-robusta.jpg?tr=w-96,q=80"
     }
   ],
   "categories": [
@@ -66,6 +56,35 @@
       "categoryId": 5,
       "categoryName": "Snacks & Branded Foods",
       "id": "a721"
+    }
+  ],
+  "cart": [
+    {
+      "id": "cd63",
+      "customerId": "007",
+      "productId": "1960",
+      "productName": "Carrot",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg?tr=w-96,q=80",
+      "quantity": 1,
+      "productPrice": "60"
+    },
+    {
+      "id": "de29",
+      "customerId": "007",
+      "productId": "d297",
+      "productName": "Capsicum",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000067-2_32-fresho-capsicum-green.jpg?tr=w-96,q=80",
+      "quantity": 1,
+      "productPrice": "70"
+    },
+    {
+      "id": "bb56",
+      "customerId": "007",
+      "productId": "f706",
+      "productName": "Banana",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000025-3_3-fresho-banana-robusta.jpg?tr=w-96,q=80",
+      "quantity": 1,
+      "productPrice": "30"
     }
   ]
 }

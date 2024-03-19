@@ -1,1 +1,26 @@
-<p>customer-cart works!</p>
+<div class="flex flex-col gap-2 items-center">
+@for(product of customer_cart; track product.id){
+    
+    <div class="mt-2 rounded-lg bg-slate-200 shadow-md w-3/4 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+        <div class="mb-2 p-2">
+            <img class="rounded-md" [src]="product.productImageUrl"/>
+        </div>
+        <div class="flex flex-col gap-2 items-start">
+            <h3 class="font-bold font-serif">{{product.productName}}</h3>
+            <p>Lorem epsum</p>
+        </div>
+      </div>
+        <div class="bg-white p-4 rounded-l-md">
+            <h2 class="font-bold">₹{{product.productPrice}}<span class="font-normal px-1">X</span>{{product.quantity}}</h2>
+        </div>
+    </div>
+}
+</div>
+<div class="w-full flex justify-center">
+<div class="mt-4 w-3/4 flex justify-between items-center">
+    <h2 class="text-2xl font-semibold"> Total Summary:</h2>
+    <p class="text-2xl font-bold text-[#81C408]">₹{{totalPrice}}</p>
+</div>
+</div>
+

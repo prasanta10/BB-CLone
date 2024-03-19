@@ -5,6 +5,7 @@ import { ProductsComponent } from './pages/admin/products/products.component';
 import { LandingComponent } from './pages/website/landing/landing.component';
 import { AllProductsComponent } from './pages/website/all-products/all-products.component';
 import { CategoryProductsComponent } from './pages/website/category-products/category-products.component';
+import { CustomerCartComponent } from './pages/website/customer-cart/customer-cart.component';
 
 export const routes: Routes = [
     {
@@ -28,6 +29,10 @@ export const routes: Routes = [
                 path:'products/:id',
                 component:CategoryProductsComponent
             },
+            {
+                path:'cart',
+                component: CustomerCartComponent
+            }
            
         ]
     },
