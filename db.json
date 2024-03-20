@@ -19,16 +19,6 @@
       "createdAt": "2024-03-13T05:31:30.178Z",
       "categoryId": "1",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000067-2_32-fresho-capsicum-green.jpg?tr=w-96,q=80"
-    },
-    {
-      "id": "f706",
-      "productId": "f706",
-      "productName": "Banana",
-      "productPrice": "30",
-      "productDescription": "Fresho Banana - Robusta, 1 kg",
-      "createdAt": "2024-03-18T07:08:11.429Z",
-      "categoryId": "1",
-      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000025-3_3-fresho-banana-robusta.jpg?tr=w-96,q=80"
     }
   ],
   "categories": [
@@ -80,7 +70,7 @@
     {
       "id": "bb56",
       "customerId": "007",
-      "productId": "f706",
+      "productId": null,
       "productName": "Banana",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000025-3_3-fresho-banana-robusta.jpg?tr=w-96,q=80",
       "quantity": 1,

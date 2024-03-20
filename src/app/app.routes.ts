@@ -6,6 +6,7 @@ import { LandingComponent } from './pages/website/landing/landing.component';
 import { AllProductsComponent } from './pages/website/all-products/all-products.component';
 import { CategoryProductsComponent } from './pages/website/category-products/category-products.component';
 import { CustomerCartComponent } from './pages/website/customer-cart/customer-cart.component';
+import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
     {
@@ -39,10 +40,12 @@ export const routes: Routes = [
     {
         path:'',
         component:LayoutComponent,
+        canActivate:[authGuard],
         children:[
             {
                 path:'products',
-                component: ProductsComponent
+                component: ProductsComponent,
+                canActivate:[authGuard],
             },
         ]
     }
