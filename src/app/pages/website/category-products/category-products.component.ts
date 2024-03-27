@@ -19,12 +19,20 @@ export class CategoryProductsComponent {
     this.activatedRoute.params.subscribe((res:any)=>{
       this.activeCategoryId=res.id;
       this.loadProducts();
+      this.getCategoryName();
     })
   }
 
   loadProducts(){
     this.httpSrv.getAllProducts().subscribe((res:any)=>{
       this.categoryProductList=res.filter((x:any)=>x.categoryId ===this.activeCategoryId);
+    })
+  }
+
+  getCategoryName(){
+    this.httpSrv.getCategories().subscribe((res:any)=>{
+      const cateObj= res.filter((x:any)=> x.categoryId == this.activeCategoryId);
+      this.categoryName=cateObj[0].categoryName;
     })
   }
 }

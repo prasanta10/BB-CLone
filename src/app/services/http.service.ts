@@ -39,4 +39,8 @@ export class HttpService {
   updateCartProduct(cartObj: any){
     return this.http.put(`http://localhost:3000/cart/${cartObj.id}`,cartObj)
   }
+
+  deleteCartProduct(id: any){
+    return this.http.delete(`http://localhost:3000/cart/${id}`);
+  }
 }

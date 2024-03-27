@@ -4,15 +4,16 @@
     <div class="mt-2 rounded-lg bg-slate-200 shadow-md w-3/4 flex justify-between items-center">
         <div class="flex items-center gap-4">
         <div class="mb-2 p-2">
-            <img class="rounded-md" [src]="product.productImageUrl"/>
+            <img class="rounded-md w-40 h-50" [src]="product.productImageUrl"/>
         </div>
         <div class="flex flex-col gap-2 items-start">
             <h3 class="font-bold font-serif">{{product.productName}}</h3>
-            <p>Lorem epsum</p>
+            <p>Lorem epsum and this and that</p>
         </div>
       </div>
-        <div class="bg-white p-4 rounded-l-md">
+        <div class="bg-white p-4 rounded-l-md flex gap-4 items-center">
             <h2 class="font-bold">₹{{product.productPrice}}<span class="font-normal px-1">X</span>{{product.quantity}}</h2>
+            <fa-icon [icon]="icon" size="lg" class="text-red-500" (click)="deleteFromCart(product.id)"></fa-icon>
         </div>
     </div>
 }

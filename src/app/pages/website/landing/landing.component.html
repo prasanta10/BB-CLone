@@ -1,6 +1,8 @@
 <header>
-    <nav class="w-full h-[60px] bg-[#81c408] flex justify-between items-center px-4">
-        <h2 class="text-2xl font-bold cursor-pointer" [routerLink]="'/'" >Shoppie</h2>
+    <nav class="w-full h-36 bg-[#81c408] flex justify-between items-center px-4">
+        <div>
+        <img src="../../../../assets/Cartify_transparent.png" class="h-40 w-40 cursor-pointer mb-4" [routerLink]="'/'"/>
+        </div>
         <div class="flex gap-4">
             <div>
             <button class="border-2 border-orange-300 rounded-lg p-2" (click)="showDropDown()">Categories</button>
