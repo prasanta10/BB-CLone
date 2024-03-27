@@ -40,8 +40,8 @@ export class ProductsComponent {
     this.httpSrv.addProduct(this.productObj).subscribe((res:any)=>{
       console.log("Product Added!")
       this.getProducts();
+      this.productObj.reset();
     })
-    this.productObj.reset();
   }
 
   getProducts(){

@@ -19,6 +19,26 @@
       "createdAt": "2024-03-13T05:31:30.178Z",
       "categoryId": "1",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000067-2_32-fresho-capsicum-green.jpg?tr=w-96,q=80"
+    },
+    {
+      "id": "aa09",
+      "productId": "aa09",
+      "productName": "Banana",
+      "productPrice": "35",
+      "productDescription": "Fresho Banana - Robusta, 1 kg",
+      "createdAt": "2024-03-22T06:36:12.623Z",
+      "categoryId": "1",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/l/10000025-3_3-fresho-banana-robusta.jpg"
+    },
+    {
+      "id": "211d",
+      "productId": "211d",
+      "productName": "Cauliflower",
+      "productPrice": "19",
+      "productDescription": "Fresho Cauliflower, 1 pc (approx. 400 to 600 g)",
+      "createdAt": "2024-03-22T06:40:56.109Z",
+      "categoryId": "1",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/l/10000074-2_2-fresho-cauliflower.jpg"
     }
   ],
   "categories": [
@@ -55,7 +75,7 @@
       "productId": "1960",
       "productName": "Carrot",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg?tr=w-96,q=80",
-      "quantity": 1,
+      "quantity": 4,
       "productPrice": "60"
     },
     {
@@ -64,17 +84,8 @@
       "productId": "d297",
       "productName": "Capsicum",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000067-2_32-fresho-capsicum-green.jpg?tr=w-96,q=80",
-      "quantity": 1,
+      "quantity": 2,
       "productPrice": "70"
-    },
-    {
-      "id": "bb56",
-      "customerId": "007",
-      "productId": null,
-      "productName": "Banana",
-      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000025-3_3-fresho-banana-robusta.jpg?tr=w-96,q=80",
-      "quantity": 1,
-      "productPrice": "30"
     }
   ]
 }
