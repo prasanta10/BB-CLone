@@ -34,7 +34,7 @@
       "id": "211d",
       "productId": "211d",
       "productName": "Cauliflower",
-      "productPrice": "19",
+      "productPrice": "20",
       "productDescription": "Fresho Cauliflower, 1 pc (approx. 400 to 600 g)",
       "createdAt": "2024-03-22T06:40:56.109Z",
       "categoryId": "1",
@@ -69,6 +69,16 @@
       "createdAt": "2024-03-27T11:04:01.961Z",
       "categoryId": "4",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/l/40288886-2_2-tata-sampann-sambhar-masala-aromatic-flavourful-blend.jpg"
+    },
+    {
+      "id": "8b90",
+      "productId": "",
+      "productName": "Haldiram's Soya Sticks",
+      "productPrice": "39",
+      "productDescription": "Haldiram's Soya Sticks, 200 g Pouch",
+      "createdAt": "2024-03-27T11:19:25.648Z",
+      "categoryId": "5",
+      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/l/20004451_2-haldirams-soya-sticks.jpg"
     }
   ],
   "categories": [
@@ -109,21 +119,12 @@
       "productPrice": "60"
     },
     {
-      "id": "e270",
-      "customerId": "007",
-      "productId": "aa09",
-      "productName": "Banana",
-      "productImageUrl": "https://www.bigbasket.com/media/uploads/p/l/10000025-3_3-fresho-banana-robusta.jpg",
-      "quantity": 1,
-      "productPrice": "35"
-    },
-    {
       "id": "4a7b",
       "customerId": "007",
       "productId": "",
       "productName": "Pepsi Black Soft Drink",
       "productImageUrl": "https://www.bigbasket.com/media/uploads/p/l/1200615_2-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg",
-      "quantity": 1,
+      "quantity": 2,
       "productPrice": "210"
     }
   ]

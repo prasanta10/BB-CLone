@@ -7,6 +7,7 @@ import { AllProductsComponent } from './pages/website/all-products/all-products.
 import { CategoryProductsComponent } from './pages/website/category-products/category-products.component';
 import { CustomerCartComponent } from './pages/website/customer-cart/customer-cart.component';
 import { authGuard } from './guards/auth.guard';
+import { CategoriesComponent } from './pages/admin/categories/categories.component';
 
 export const routes: Routes = [
     {
@@ -47,6 +48,10 @@ export const routes: Routes = [
                 component: ProductsComponent,
                 canActivate:[authGuard],
             },
+            {
+                path:'categories',
+                component: CategoriesComponent,
+            }
         ]
     }
 ];

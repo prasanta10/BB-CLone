@@ -38,7 +38,6 @@ export class ProductsComponent {
   addProduct(){
     console.log(this.productObj);
     this.httpSrv.addProduct(this.productObj).subscribe((res:any)=>{
-      console.log("Product Added!")
       this.getProducts();
       this.productObj.reset();
     })
@@ -47,7 +46,6 @@ export class ProductsComponent {
   getProducts(){
     this.httpSrv.getAllProducts().subscribe((res:any)=>{
       this.allProductList=res;
-      console.log(this.allProductList);
     })
   }
 
@@ -55,17 +53,16 @@ export class ProductsComponent {
     this.toggleFlag=true;
     this.productObj=product;
     this.productObj.productId=product.id;
-    console.log(this.productObj.productId);
     this.editFlag=true;
   }
 
   editProducts(){
     this.httpSrv.updateProduct(this.productObj).subscribe((res: any)=>{
+      this.productObj.reset();
       alert("Product Edited")
       this.getProducts();
     this.toggleFlag=false;
     this.editFlag=false;
-    this.productObj.reset();
     })
   }
 
