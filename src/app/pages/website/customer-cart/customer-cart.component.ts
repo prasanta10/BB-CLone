@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { HttpService } from '../../../services/http.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-cart',
@@ -16,6 +17,7 @@ export class CustomerCartComponent {
  icon= faTrashCan;
 
  httpSrv= inject(HttpService);
+ toastr= inject(ToastrService)
  
  ngOnInit(){
   this.getCartProducts();
@@ -40,6 +42,9 @@ export class CustomerCartComponent {
  deleteFromCart(id:any){
   this.httpSrv.deleteCartProduct(id).subscribe((res:any)=>{
     this.getCartProducts();
+    this.toastr.error('Item Deleted','',{
+      timeOut:3000,
+    })
   })
  }
 }
